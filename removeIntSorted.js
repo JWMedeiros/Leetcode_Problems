@@ -1,3 +1,4 @@
+//Proper JS solution (changing length of array)
 var removeDuplicates = function(nums) {
     for (let i=0; i<(nums.length-1);i++){
         console.log(i)
