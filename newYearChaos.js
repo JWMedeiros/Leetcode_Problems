@@ -1,3 +1,5 @@
+//With some help by JavaAid: https://www.youtube.com/watch?v=YWYF6bOhPW8
+
 function minimumBribes(q) {
     let swapCount=0;
     for (let i = q.length-1; i>=0;i--){
