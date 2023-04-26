@@ -1,5 +1,4 @@
 //This works but needs optimization
-
 function arrayManipulation(n, queries) {
     let highestNum=0;
     let list =[];

@@ -1,4 +1,4 @@
-//With help from Anand Panday on youtube: https://www.youtube.com/watch?v=SJ_C9mclZJo
+//With help from Anand Pandey on youtube: https://www.youtube.com/watch?v=SJ_C9mclZJo
 function substrCount(n, s) {
     let numSubstr = s.length;
     for (let i=0; i<s.length;i+=1){
