@@ -1,4 +1,4 @@
-function returnDifferent (numsList, secondNumsList){
+const returnDifferent= (numsList, secondNumsList)=>{
     let dataSet={
         firstDiff:[],
         secondDiff:[]

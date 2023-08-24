@@ -1,4 +1,4 @@
-var isPalindrome = function(head) {
+const isPalindrome = function(head) {
     let str = ""
     while (head){
         str+=head.val
