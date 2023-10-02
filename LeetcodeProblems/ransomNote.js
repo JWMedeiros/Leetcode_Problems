@@ -1,7 +1,7 @@
 let note='aaa'
 let magazine='abcdefghaaa'
 
-var canConstruct = function(ransomNote, magazine) {
+function canConstruct(ransomNote, magazine) {
     for (note of ransomNote){
         let flag=false;
         for (let i=0; i<magazine.length;i++){

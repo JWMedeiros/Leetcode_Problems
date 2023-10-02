@@ -1,6 +1,6 @@
 let str="MCMXCIV"
 
-var romanToInt = function(s) {
+function romanToInt(s) {
     let total=0;
     let flag=false;
     

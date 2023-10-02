@@ -1,3 +1,4 @@
+//This is disgusting and idk what the problem statement for this was
 var fizzBuzz = function(n) {
     let arr=[];
     for (let i=1;i<=n;i++){

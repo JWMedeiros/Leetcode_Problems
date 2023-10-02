@@ -1,8 +1,8 @@
- var twoSum = function(nums, target) {
+ function twoSum(nums, target) {
     let foundNums={};
     let solutionPositions=[];
     
-    //Iterate numbers array
+    //Iterate thru numbers array
     for (let i=0;i<nums.length;i++){
         let key=target-nums[i]
         

@@ -1,3 +1,4 @@
+//This could probably be re-done using a set
 function eliminateDupes (str){
     let arr = str.split(',');
     let strObj={};

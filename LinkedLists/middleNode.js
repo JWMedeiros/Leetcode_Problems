@@ -6,7 +6,7 @@
  * }
  */
 
-var middleNode = function(head) {
+function middleNode(head) {
     let slowP=head;
     let fastP=head;
     
