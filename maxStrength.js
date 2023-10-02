@@ -1,27 +1,27 @@
 //Doesn't work properly, some issue here
 function maxStrength(n){
-    let maxStrength=0
+    let possibleNums = new Map();
     let team=[]
-    team.push(n)
-    let stringNum=''
+    let id = n;
+    let sum=0;
+    let digits =[]
 
-    for (let i=0; i<team.length; i++){
-        let totalNum=0;
-        stringNum=team[i].toString();
-        stringNum = splitIntoArray(stringNum);
-        //This doesnt work for numbers
-        for (let digit in stringNum){
-            console.log(digit);
-            totalNum+=findFactorial(digit);
+    while (!possibleNums.get(id)){
+        digits = String(id).split('');
+        sum = 0;
+
+        for (let d of digits) {
+            sum += findFactorial(digits)
         }
-        if (totalNum<1000000){
-            team.push(totalNum);
-        }
+
+        possibleNums.set(id, sum);
+
+        team.push(sum)
+        id = sum
     }
 
     team.sort((a,b)=>a-b);
-    maxStrength=team[-1]*10;
-    return maxStrength;
+    return team[0] * team.length;
 }
 
 function findFactorial(n){
@@ -32,8 +32,4 @@ function findFactorial(n){
     } else {
         return n*findFactorial(n-1)
     }
-}
-
-function splitIntoArray(num){
-    return Array.from(String(num), Number)
 }
